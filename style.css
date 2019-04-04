@@ -1,3 +1,39 @@
-body {
-    background-color:lightgray;
+#container 
+
+{
+    width: 1000px;
+    padding: 30px;
+    text-align: center;
 }
+
+#logo 
+
+{
+    width: 1000px;
+    text-align: right;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+#menu 
+
+{
+    float: left;
+    width: 100px;
+    margin-top: 170px;
+}
+
+#content 
+
+{
+    float: left;
+    width: 900px;
+}
+
+#footer 
+
+{
+   background-color: red; 
+   clear: both;
+}
+
