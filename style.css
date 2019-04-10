@@ -1,33 +1,59 @@
 #container 
 
 {
-    width: 1000px;
+    width: 1100px;
     padding: 30px;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #logo 
 
 {
-    width: 1000px;
-    text-align: right;
-    padding-bottom: 20px;
+    width: 1040px;
     font-size: 30px;
+    margin-bottom: 20px;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 0.2ex;
+    text-align: right;
+    margin-right: 60px;
 }
+
+#nav 
+
+{
+    float:left;
+}
+
 
 #menu 
 
 {
-    float: left;
+    width: 100px;
+    margin-top: 100px;
+    background-color: lightgray;
+}
+
+#contact 
+
+{
     width: 100px;
     margin-top: 170px;
+    background-color: lightgreen;
+}
+
+#forcontent 
+
+{
+    width: 900px;
+    float: left;
 }
 
 #content 
 
 {
-    float: left;
     width: 900px;
+    margin-left: 60px;
 }
 
 #footer 
@@ -35,5 +61,33 @@
 {
    background-color: red; 
    clear: both;
+   width: 1100px;
 }
 
+a:link 
+
+{
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+
+    
+}
+
+a:visited 
+
+{
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+    
+}
+
+a:hover 
+
+{
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+    
+}
