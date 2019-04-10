@@ -31,7 +31,10 @@
 {
     width: 100px;
     margin-top: 100px;
-    background-color: lightgray;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+
+    
 }
 
 #contact 
@@ -39,7 +42,8 @@
 {
     width: 100px;
     margin-top: 170px;
-    background-color: lightgreen;
+    font-family: 'Quicksand', sans-serif;
+    
 }
 
 #forcontent 
@@ -58,10 +62,14 @@
 
 #footer 
 
-{
-   background-color: red; 
+{ 
    clear: both;
    width: 1100px;
+   text-align: center;
+   font-family: 'Quicksand', sans-serif;
+   font-size: 14px; 
+   margin-top: 20px;
+   
 }
 
 a:link 
@@ -86,7 +94,7 @@ a:visited
 a:hover 
 
 {
-    color: black;
+    color: lightgray;
     text-decoration: none;
     background-color: transparent;
     
