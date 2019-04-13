@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>stanikphoto.com</title>
+        <meta name="description" content="Krzysztof Stanik Fotografia" />
+        <meta name="keywords" content="photo, stanikphoto, bike, mountainbike" />
+        <meta http-equiv="X-UA-compatible" content="IE=edge,chrome=1" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/fontello.css">
+        
+    </head>
+    
+    
+    <body>
+        <div id="container">
+            
+            <div id="logo"><a href="index.html">stanikphoto.com</a>
+            </div>
+            <div id="nav">
+                <div id="menu">
+                    <a href="wedding.html">wedding <br/><br/></a> 
+                    <a href="bike.html">bike <br/><br/> </a>
+                    <a href="doc.html">doc <br/><br/> </a>
+                    <a href="other.html">other <br/><br/></a>
+                </div>
+                <div id="contact"><a href="about.html">about</a>
+                </div><br/>
+                <div id="fbicon"><a href="http://www.facebook.com/stanikphoto" target="_blank"><i class="icon-facebook-squared"></i></a></div>
+                <div id="instaicon"><a href="http://www.instagram.com/stanikphoto" target="_blank"><i class="icon-instagram"></i></a></div>
+            </div>
+            <div id="forcontent">
+                    <div class="galeria">
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 6</div>
+                            <img src="doc/doc01.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 6</div>
+                            <img src="doc/doc02.jpg" style="width:100%">
+                        </div>
+
+                        
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+                    </div>
+ 
+                </div>
+                <div id="footer">&copy Krzysztof Stanik
+                </div>
+        </div>
+        
+        <script type="text/javascript">
+            var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+} /* dlaczego działa w body, a nie działa w head i w zewnętrznym pliku? */
+        </script> 
+     </body>
+</html>
